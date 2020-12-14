@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+   
+
+}
+body{
+    background-color: #252627;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+    color:rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex; /*makes the links display horizontally*/
+    justify-content: space-around; /*adjusts the spacing*/
+    width: 30%
+    
+}
+
+.nav-links a{ /*selects all a tags?*/
+    color:rgb(226, 226, 226);
+    text-decoration: none; /*removes underline*/
+    letter-spacing: 3px;
+    font-weight:bold ;
+    font-size: 14px;
+
+}
+
+.nav-links li{
+    list-style: none; /*removes bullet points*/
+
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(226, 226,226);
+    margin: 5px;
+
+}
+
+/* -----------------------------------------------------------*/
+
+.container-main-section{
+    height:calc(100vh - 811.6px);
+}
+
+.text{
+    margin-top:120px;
+}
+
+.text h1{
+    color: #fff;
+    font-size:3rem;
+    cursor: context-menu;
+    
+}
+
+.text span{
+    display: inline-block;
+
+}
+
+span:hover{
+    color: #48CFAD;
+    transition: ;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        display: flex; /*makes the links display horizontally*/
+        justify-content: space-around; /*adjusts the spacing as the screen size reduces*/
+        width: 60%;
+        
+
+}
+    
+
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden; 
+        /*we dont want the container to scroll*/
+    }
+  .nav-links{
+      position: fixed;
+      right: 0px; /*so that it sticks to the right*/
+      height: 92vh; /*full screen*/
+      top: 8vh; /* so that its right under the nav bar*/
+      background-color: #5D4954;
+      display: flex;
+      flex-direction: column; /*so that it aligns in columns*/
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%); /*moves container off the screen, prepare for transition*/
+      transition: transform 0.5s ease-in;
+
+  }
+  .nav-links li{
+      opacity: 0; /*hides the list*/
+  }
+  .burger{
+      display: block;
+  }
+
+}
+
+.nav-active{
+    transform: translateX(0%); /*move back to zero so that the container displays*/
+}
+
+/*now we creating an animation*/
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px); /*starts at opacity 0 and transitions to 1. 
+        goes from 50px to 0px (slides in)*/
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
