@@ -25,9 +25,6 @@ const navSlide = () => {
  navSlide();
 
 
-
-
-
 /*make a function for transitioning nav*/
   /*on click, nav should get a class list. toggle class list of "nav active"*/
 
