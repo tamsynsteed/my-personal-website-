@@ -33,7 +33,10 @@ nav{
     justify-content: space-around; /*adjusts the spacing*/
     width: 30%
     
+    
 }
+
+
 
 .nav-links a{ /*selects all a tags?*/
     color:rgb(226, 226, 226);
@@ -41,13 +44,22 @@ nav{
     letter-spacing: 3px;
     font-weight:bold ;
     font-size: 14px;
+    border-radius: 30%;
+    margin: 12px;
+    padding: 10px;
+
 
 }
 
 .nav-links li{
     list-style: none; /*removes bullet points*/
+    
 
 }
+
+.nav-links li a:hover{
+    background: #ED5565;
+    color: #fff;}
 
 .burger{
     display: none;
@@ -178,6 +190,40 @@ p {
     bottom: 130px;
 }
 
+.social-icons{
+    position: absolute;
+    right: 50px;
+    bottom: 2%; 
+}
+
+ 
+.social-icons ul li{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.social-icons ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 17px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.social-icons ul li a:hover{
+    background: #c32865;
+    color: #fff;}
+
+
+    .about-me{
+        flex-direction: column;
+    }
+
 
 
 @media screen and (max-width: 1024px){
@@ -223,7 +269,14 @@ p {
     transform: translateX(0%); /*move back to zero so that the container displays*/
 }
 
+.about-me {
+    color: white;
 
+}.about-container{
+    display:flex;
+    flex-direction: column;
+
+}
 
 
 @keyframes rubberBand {
@@ -273,5 +326,7 @@ p {
 
     
 /*-----------------------------------------Animation using JQuery--------------------------------------------------------*/
+
+
 
 
