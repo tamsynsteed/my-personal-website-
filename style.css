@@ -287,6 +287,8 @@ align-content: center;
         overflow-x: hidden; 
         /*we dont want the container to scroll*/
     }
+
+    
   .nav-links{
       position: fixed;
       right: 0px; /*so that it sticks to the right*/
@@ -465,13 +467,13 @@ align-content: center;
     width: 90%;
   }
   .bar .progress-line.css span{
-    width: 60%;
+    width: 70%;
   }
   .bar .progress-line.jquery span{
-    width: 85%;
+    width: 60%;
   }
   .bar .progress-line.python span{
-    width: 50%;
+    width: 65%;
   }
   .bar .progress-line.mysql span{
     width: 75%;
