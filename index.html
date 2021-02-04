@@ -97,7 +97,10 @@
     </div>
 
 </div>
-   <div id="about" class="about-container" style="text-align: center;">
+
+<section id="about">
+
+   <div class="about-container" style="text-align: center;">
         <div class="about-me" style="padding: 20px;">
             <h1>About me</h1>
         </div>
@@ -123,9 +126,13 @@
             </p>
         </section>
         </div>
+     
+        <section id="skills"></section>
 
     </div>
-<div id="skills" class='skills'>
+
+  </section>
+<div class='skills'>
     
     <div class="skill-bars">
         <h1>Skills</h1>
@@ -233,9 +240,11 @@
     </div>
     </div>
 
+    <section id="contacts"></section>
+
   <!-- END GRID -->
   
-  <div id="contacts" class="container">
+  <div class="container">
     
     <form action="https://formspree.io/f/xaylaogz" method="POST">
       <label for="fname">First Name</label>
@@ -246,9 +255,9 @@
   
       <label for="country">Role</label>
       <select id="country" name="Role">
-        <option value="australia">NA</option>
-        <option value="canada">Client</option>
-        <option value="usa">Employer</option>
+        <option value="na">NA</option>
+        <option value="client">Client</option>
+        <option value="employer">Employer</option>
       </select>
   
       <label for="subject">Subject</label>
@@ -256,6 +265,22 @@
   
       <input type="submit" value="Submit">
     </form>
+
+    <div class="contact-info">
+
+      <div>
+        <p style="color: #ED5565; font-size: larger;"><i style='font-size:24px' class="fa fa-mobile"></i> 081 469 4516 </p>
+    
+      </div>
+  
+  
+      <div>
+        <p style="color: #ED5565; font-size: larger;"><i style='font-size:24px' class="fa fa-envelope"></i> tamsynsteed@gmail.com </p>
+    
+    
+      </div>
+    
+    </div>
     
   </div>
 
@@ -264,27 +289,12 @@
   </div>
 
 
-<div class="contact-info">
 
-  <div>
-    <p style="color: #ED5565; font-size: larger;"><i style='font-size:24px' class="fa fa-mobile"></i> 081 469 4516 </p>
-
-  </div>
- 
-
-  <div>
-    <p style="color: #ED5565; font-size: larger;"><i style='font-size:24px' class="fa fa-envelope"></i> tamsynsteed@gmail.com </p>
-
-
-  </div>
-
-
-
-</div>
+<div id="testi"><h1>Testimonials<h1>		</div>
   
   <!---Reviews-->
   <div class="carrousel" id="testimonials">
-    <h2>Testimonials</h2>						
+    				
     <input type="radio" name="slides" id="radio-1" checked>
     <input type="radio" name="slides" id="radio-2">
     <input type="radio" name="slides" id="radio-3">
@@ -339,6 +349,8 @@
         <label for="radio-4" id="dotForRadio-4"></label>
     </div>
 </div>
+
+<div id="topbtn"> <a href="#home">Back to Top</a></div>
 <!--End reviews-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
