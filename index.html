@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamsyn Steed</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timeline.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="jquery-3.5.1.min.js"></script>
     <script>
         speed = 600
       </script>
+</head>
       
 <body>
     <!----------------------NAV BAR------------------------------------>
@@ -21,6 +23,8 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#exp">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contact</a></li>
@@ -75,7 +79,7 @@
 
             </h1>
 <br>
-            <p>HTML/CSS/JavaScript/Python/MySQL</p>
+            <p id="sub_head">HTML/CSS/JavaScript/Python/MySQL</p>
             <a class ="contact" id="contact" href="#contacts">contact me</a>
         </div>
 
@@ -86,13 +90,13 @@
    
     <div class="social-icons">
         <ul>
-          <li><a href="https://github.com/tamsynsteed?tab=repositories"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.facebook.com/Tamsyn.Steed"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/Tamste01"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://za.linkedin.com/in/tamsyn-steed-662102116"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/tamste01/?hl=en"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://github.com/tamsynsteed?tab=repositories" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/Tamsyn.Steed" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/Tamste01" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://za.linkedin.com/in/tamsyn-steed-662102116" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.instagram.com/tamste01/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
           
-          <li><a href="https://za.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+          <li><a href="https://za.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
         </ul>
     </div>
 
@@ -110,28 +114,65 @@
             <p>
               I am an aspiring Web Developer who is creative, self-motivated and ambitious. <br>I enjoy creating useful tools that add value and I am always up for a challenge. <br>I have a passion for web development, and my goal is to pursue a career as a Full Stack Developer.
             </p> 
-            <h1 style="color:white; padding:20px;">Education</h1>
-
             
-            <p>Software Development Certificate <br>
-              Life Choices Coding Academy<br>
-              2020-2021<br>
-              Expected completion: March 2021<br><br><br>
-               BCOM, Information Systems
-               <br>
-               The University of The Western Cape <br>
-               2017<br>
-               Completed
-
-            </p>
-        </section>
+          </section>
+        
         </div>
-     
-        <section id="skills"></section>
-
-    </div>
+        
 
   </section>
+
+  <section id="edu">
+
+    <h1 style="color:white; padding:20px;text-align: center;">Education</h1>
+
+    <div class="timeline">
+      <div class="container1 left">
+        <div class="content1">
+          <h2>2021</h2>
+          <p>Software Development Certificate <br><br>
+            Life Choices Coding Academy<br></p>
+        </div>
+      </div>
+      <div class="container1 right">
+        <div class="content1">
+          <h2>2017</h2>
+          <p> BCOM Degree, Information Systems & Finance <br><br> The University of The Western Cape <br>
+          <br>
+            Completed</p>
+        </div>
+      </div>
+      <div class="container1 left">
+        <div class="content1">
+          <h2>2012</h2>
+          <p>St Joseph's Marist College<br><br>
+          Matric (Bachelor's Pass)</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+  <section id="skills">
+
 <div class='skills'>
     
     <div class="skill-bars">
@@ -179,7 +220,11 @@
       </div>
     
 </div>
+
+</section>
    <!-- Portfolio Gallery Grid -->
+
+   <section id="portfolio">
    
 <div id="projects" class="row">
     <h1 style="text-align: center; color:aliceblue;margin:1em;">Projects</h1>
@@ -216,7 +261,7 @@
         <a href="https://github.com/tamsynsteed/My.Weather.App" target="_blank">
         <img src="weatherapp.png" alt="Car" style="width:100%">
         <h4>Weather App API</h4>
-        <p>Python, Tkinter</p>
+        <p>Created an app that allows to enter in the name of a city. </p>
       </a>
       </div>
     </div>
@@ -239,6 +284,8 @@
       </div>
     </div>
     </div>
+
+  </section>
 
     <section id="contacts"></section>
 
