@@ -257,17 +257,22 @@ p {
 
 .about-me {
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 #about {
   height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#skills {
+#ab_skill_container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .skills {
   width: 100%;
@@ -345,11 +350,16 @@ p {
 .about-container {
   display: flex;
   flex-direction: column;
+  margin: auto;
 
-  padding-left: 10vw;
-  margin-bottom: 10vh;
+  padding-left: 30px;
+  margin-bottom: 2vh;
   font-family: "Poppins", sans-serif;
-  padding-right: 10vw;
+  padding-right: 30px;
+  padding-bottom: 50px;
+
+  width: 40%;
+  height: 60%;
 }
 
 @keyframes rubberBand {
@@ -407,7 +417,8 @@ p {
 }
 .skill-bars {
   margin: auto;
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
   width: 70%;
   font-family: "Poppins", sans-serif;
