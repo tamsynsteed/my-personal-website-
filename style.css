@@ -310,7 +310,13 @@ p {
     0%
   ); /*move back to zero so that the container displays*/
 }
-
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 90px;
+}
 .about-me {
   color: white;
 }
@@ -373,6 +379,15 @@ p {
 /*-----------------------------------------Animation using JQuery--------------------------------------------------------*/
 
 /*----sliders----*/
+
+#skills {
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+
+  padding-top: 80px;
+}
+
 ::selection {
   color: #fff;
   background: #ed5565;
