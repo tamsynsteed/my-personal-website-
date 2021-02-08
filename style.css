@@ -261,7 +261,8 @@ p {
 }
 #about {
   height: 100vh;
-
+  margin-top: 8vh;
+  margin-bottom: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +275,11 @@ p {
   align-items: center;
   width: 100%;
 }
-.skills {
+.skills1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 #portfolio {

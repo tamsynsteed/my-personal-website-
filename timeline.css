@@ -27,7 +27,7 @@
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 80%;
   box-shadow: 5px 5px 20px rgb(231, 112, 132);
 }
 
@@ -47,7 +47,7 @@
 
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -30%;
 }
 
 /* Place the container to the right */
@@ -96,8 +96,30 @@
   border-radius: 6px;
 }
 
+#edu_head {
+  margin-top: 70px;
+  flex-direction: column;
+}
+
 #edu {
-  height: 100vh;
+  height: 92vh;
+  display: flex;
+  padding-top: 8vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#work-head {
+  margin-top: 70px;
+  flex-direction: column;
+}
+
+#work {
+  height: 92vh;
+  display: flex;
+  padding-top: 8vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
