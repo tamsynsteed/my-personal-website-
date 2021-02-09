@@ -802,6 +802,7 @@ a:visited {
   position: relative;
   background-color: inherit;
   width: 50%;
+  box-shadow: 5px 5px 20px rgb(231, 112, 132);
 }
 
 /* The circles on the timeline */
