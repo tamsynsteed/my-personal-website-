@@ -501,16 +501,16 @@ p {
   }
 }
 .progress-line.html span::after {
-  content: "90%";
+  content: "75%";
 }
 .progress-line.css span::after {
-  content: "60%";
+  content: "80%";
 }
 .progress-line.jquery span::after {
-  content: "85%";
+  content: "60%";
 }
 .progress-line.python span::after {
-  content: "50%";
+  content: "70%";
 }
 .progress-line.mysql span::after {
   content: "75%";
