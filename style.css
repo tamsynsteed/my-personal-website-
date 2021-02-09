@@ -387,7 +387,7 @@ p {
   justify-content: center;
   align-content: center;
 
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 ::selection {
@@ -908,4 +908,11 @@ a:visited {
   .right {
     left: 0%;
   }
+}
+
+#work {
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  padding-top: 100px;
 }
