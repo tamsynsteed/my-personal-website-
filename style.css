@@ -9,9 +9,8 @@ body {
   background-color: #252627;
   overflow-x: hidden;
 }
-section{
+section {
   overflow: hidden;
-
 }
 nav {
   width: 100vw;
@@ -455,19 +454,19 @@ p {
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .bar .progress-line.html span {
-  width: 90%;
+  width: 75%;
 }
 .bar .progress-line.css span {
-  width: 60%;
+  width: 80%;
 }
 .bar .progress-line.jquery span {
-  width: 85%;
+  width: 60%;
 }
 .bar .progress-line.python span {
-  width: 50%;
+  width: 70%;
 }
 .bar .progress-line.mysql span {
-  width: 75%;
+  width: 80%;
 }
 .progress-line span::before {
   position: absolute;
@@ -548,7 +547,7 @@ h1 {
 .column {
   float: left;
   width: 33.33%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 /* Clear floats after rows */
@@ -643,7 +642,6 @@ input[type="submit"]:hover {
   height: auto;
   border-radius: 40px;
   font-family: "Poppins", sans-serif;
-
 }
 .carrousel h2 {
   margin: 0;
@@ -788,7 +786,7 @@ a:visited {
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: white;
@@ -808,7 +806,7 @@ a:visited {
 
 /* The circles on the timeline */
 .timelineContainer::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -869,7 +867,7 @@ a:visited {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 /* timeline mobile*/
@@ -877,35 +875,36 @@ a:visited {
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+    left: 31px;
   }
 
-  .carrousel{
+  .carrousel {
     width: 90vw !important;
   }
-  
+
   /* Full-width containers */
   .timelineContainer {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .timelineContainer::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
+  .left::after,
+  .right::after {
+    left: 15px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .right {
-  left: 0%;
+    left: 0%;
   }
 }
