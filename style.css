@@ -636,7 +636,7 @@ input[type="submit"]:hover {
   text-align: center;
   padding: 4em 0;
   height: 7.5em;
-  max-width: 55vw;
+  max-width: 60vw;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -644,6 +644,7 @@ input[type="submit"]:hover {
   height: auto;
   border-radius: 40px;
   font-family: "Poppins", sans-serif;
+  padding-top: 20px;
 }
 .carrousel h2 {
   margin: 0;
@@ -675,12 +676,15 @@ input[type="submit"]:hover {
 .carrousel li p {
   margin-top: 0;
   font-size: small;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 .carrousel li q {
   max-width: 90%;
   margin: auto;
   color: #f5f0f0;
-  font-size: small;
+  font-size: medium;
   font-weight: bold;
 }
 .carrousel li img {
@@ -917,4 +921,12 @@ a:visited {
   justify-content: center;
   align-content: center;
   padding-top: 70px;
+}
+
+.test_head {
+  font-family: "Poppins", "sans seriff";
+  text-align: center;
+  color: aliceblue;
+
+  margin-bottom: 1em;
 }
