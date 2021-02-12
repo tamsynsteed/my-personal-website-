@@ -575,9 +575,10 @@ h1 {
   object-fit: contain;
 }
 
-.content:hover {
+/*.content:hover {
+  
   opacity: 0.5;
-}
+}*/
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -915,5 +916,5 @@ a:visited {
   min-height: 100vh;
   justify-content: center;
   align-content: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
