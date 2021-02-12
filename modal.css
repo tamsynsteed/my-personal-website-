@@ -115,7 +115,13 @@
 }
 
 @media screen and (min-width: 401px) and (max-width: 1024px) {
-  .modal-content {
+  .modal-content p,
+  h4 {
     display: none;
+    max-width: 100%;
   } /* hide it elsewhere */
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+  }
 }
