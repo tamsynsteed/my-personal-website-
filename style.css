@@ -629,6 +629,7 @@ input[type="submit"]:hover {
   margin: 10vw;
   color: aliceblue;
   font-family: "Poppins", sans-serif;
+  margin-top: 5vw;
 }
 /*---reviews--->*/
 .carrousel {
@@ -929,4 +930,12 @@ a:visited {
   color: aliceblue;
 
   margin-bottom: 1em;
+}
+
+.cont_head {
+  margin-bottom: 6px;
+}
+
+#contacts {
+  margin-bottom: 70px;
 }
