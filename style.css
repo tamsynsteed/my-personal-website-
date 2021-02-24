@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -258,6 +259,13 @@ p {
     justify-content: space-around; /*adjusts the spacing as the screen size reduces*/
     width: 60%;
   }
+
+  .icon_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -303,6 +311,11 @@ p {
   .contact {
     display: none !important;
   }
+  .icon_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   .container-main-section > div {
     width: 100vw;
   }
@@ -314,7 +327,7 @@ p {
   ); /*move back to zero so that the container displays*/
 }
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 
   align-content: center;
@@ -322,6 +335,13 @@ p {
 }
 .about-me {
   color: white;
+}
+
+.para {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px;
 }
 .about-container {
   display: flex;
@@ -772,7 +792,12 @@ input[type="submit"]:hover {
   width: 120px;
   margin: auto;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 10;
+
+  left: 50%;
+  bottom: 0;
+
+  margin: 0 auto;
 }
 
 #topbtn:hover {
@@ -928,6 +953,34 @@ a:visited {
   padding-top: 90px;
 }
 
+.fas,
+.fab {
+  color: white;
+}
+
+.icon_container {
+  padding-top: 180px;
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.icon_container > div {
+  flex-direction: row;
+
+  border-color: #b0a7a2;
+  width: 200px;
+  padding: 20px;
+  margin: auto;
+}
+
+.icon_text {
+  padding-top: 55px;
+  color: #b0a7a2;
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+}
+
 .test_head {
   font-family: "Poppins", "sans seriff";
   text-align: center;
@@ -942,4 +995,10 @@ a:visited {
 
 #contacts {
   margin-bottom: 70px;
+}
+
+.test_sec {
+  min-height: 100vh;
+
+  padding-top: 90px;
 }
