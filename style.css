@@ -316,7 +316,7 @@ p {
 #about {
   height: 100vh;
   display: flex;
-  justify-content: center;
+
   align-content: center;
   padding-top: 90px;
 }
@@ -389,6 +389,10 @@ p {
   align-content: center;
 
   padding-top: 100px;
+}
+
+.skills h1 {
+  text-align: center;
 }
 
 ::selection {
@@ -921,7 +925,7 @@ a:visited {
   min-height: 100vh;
   justify-content: center;
   align-content: center;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .test_head {
